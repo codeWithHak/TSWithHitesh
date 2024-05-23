@@ -9,12 +9,22 @@ interface User {
 
 }
 
-let user:User = {
+interface User {
+    role:string
+}
+
+interface Personal extends User{
+    code:number
+}
+
+let user:Personal = {
     name:"huzair",
     age:18,
     email:"hak@gmail.com",
     religion:"Islam",
     idol:"Babar",
+    role:"ceo",
+    code:18,
     startTrial: () => {
         return "Trial is started"
     },

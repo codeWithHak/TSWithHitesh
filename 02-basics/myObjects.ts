@@ -52,6 +52,20 @@
 
 
 
+type User = {
+   readonly name:string,
+   age:number,
+   pass?:number
+}
 
+
+let user1:User={
+    name:"huzair",
+    age:18
+}
+
+
+
+export{}
 
 

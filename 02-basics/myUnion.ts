@@ -31,7 +31,15 @@ let myStr:string[] = ["H","A","K"]
 
 let myMix:(string|number)[] = ["H",1,"A",2,"K",3]
 
-console.log(myMix);
+// console.log(myMix);
+
+
+function getAge (age:number|string) {
+    return typeof age === "string" ?  age.toUpperCase() : (age + age) * age
+
+    }
+
+console.log(getAge(2));
 
 
 
